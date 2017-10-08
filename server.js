@@ -68,6 +68,15 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects', {
+    name: ' || JBM',
+    pageTitle: 'Current Projects'
+  });
+});
+
+
+
 
 app.get('/bad', (req, res) => {
   res.send({
